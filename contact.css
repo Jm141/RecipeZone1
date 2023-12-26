@@ -106,8 +106,17 @@ height: auto;
 .mar{
     display: none;
 }
-
+#x{
+    color: #fff;
+    font-size: 150%;
+    font-weight: bolder;
+}
 @media screen and (min-width: 700px) and (max-width: 1000px){
+    #x{
+        color: #fff;
+        font-size: 150%;
+        font-weight: bolder;
+    } 
     .site {
         width: 547px;
         height: 140px;
@@ -147,6 +156,11 @@ height: auto;
 
 } 
 @media screen and (min-width: 490px) and (max-width: 600px){
+    #x{
+        color: #fff;
+        font-size: 150%;
+        font-weight: bolder;
+    }
     .site {
         text-shadow: 11px 3px black;
         position: absolute;
@@ -187,6 +201,11 @@ height: auto;
     }
 }
 @media screen and (width: 768px) {
+    #x{
+        color: #fff;
+        font-size: 150%;
+        font-weight: bolder;
+    }
     .site {
         width: 332px;
         height: 140px;
@@ -238,6 +257,11 @@ height: auto;
 }
 
 @media screen and (width: 425px) {
+    #x{
+        color: #fff;
+        font-size: 150%;
+        font-weight: bolder;
+    }
     .site {
         width: 332px;
         height: 140px;
@@ -292,6 +316,7 @@ height: auto;
     }
 
     .mar img {
+        width: 100%;
         height: 250px;
     }
     .tble{
@@ -300,6 +325,11 @@ height: auto;
 }
 
 @media screen and (width: 375px) {
+    #x{
+        color: #fff;
+        font-size: 150%;
+        font-weight: bolder;
+    }
     .site {
         width: 332px;
         height: 140px;
@@ -367,6 +397,11 @@ height: auto;
 }
 
 @media screen and (width: 320px) {
+    #x{
+        color: #fff;
+        font-size: 150%;
+        font-weight: bolder;
+    }
     .site {
         width: 187px;
         height: 140px;
