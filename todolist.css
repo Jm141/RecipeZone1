@@ -1,0 +1,127 @@
+#check {
+    display: none;
+}
+
+#cont {
+    width: 400px;
+    right: -100%;
+    text-align:left;
+    transition: all 0.5s;
+    height: 100%;
+    position: fixed;
+    float: right;
+    z-index: 1;
+    top: 0;
+    background-color: #464444;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin: 10px;
+}
+
+#check:checked ~ #cont {
+    right: 0;
+}
+
+#todoContainer {
+    width: 300px;
+    margin: 0 auto; 
+    background-color: #464444;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);
+    text-align: center; 
+}
+
+.todo-app {
+    text-align: center;
+}
+.completed {
+    text-decoration: line-through;
+}
+
+
+
+.row {
+    display: flex;
+    margin-top: 10px;
+}
+
+#task-name-input {
+    flex: 1;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #755b5b;
+    border-radius: 4px;
+}
+
+#add-task-button {
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    background-color: #a7a0a0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+#tasks-list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    display: flex;
+    background: #ccc;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2)
+}
+
+.list li button {
+    background-color: #534241;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+h2 img {
+    width: 60px;
+    height: 60px;
+}
+h2.td{
+    color: rgb(255, 255, 255);
+}
+#x{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+@media screen and (width: 320px) {
+    
+    #cont {
+        width: 303px;
+        right: -128%;
+        text-align: left;
+        transition: all 0.5s;
+        height: 100%;
+        position: fixed;
+        float: right;
+        z-index: 1;
+        top: 0;
+        background-color: #464444;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        margin: 10px;
+    }
+}
+   

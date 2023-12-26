@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellocentric Traveler Brochure</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .brochure {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+        }
+
+        .panel {
+            width: 33.33%;
+            height: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            position: relative;
+            background: linear-gradient(to right, #ffb6c1, #ff69b4);
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .panel img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="brochure">
+        <div class="panel">
+            <img src="image1.jpg" alt="Destination 1">
+            <h1>Discover the Unknown</h1>
+            <p>Embark on a journey to uncover hidden gems and explore the uncharted territories. Let curiosity be your guide.</p>
+        </div>
+        <div class="panel">
+            <img src="image2.jpg" alt="Destination 2">
+            <h1>Connect with Cultures</h1>
+            <p>Immerse yourself in diverse cultures, meet locals, and experience traditions that will broaden your perspective.</p>
+        </div>
+        <div class="panel">
+            <img src="image3.jpg" alt="Destination 3">
+            <h1>Adventure Awaits</h1>
+            <p>Feel the adrenaline as you engage in thrilling activities. From mountain hikes to water sports, the excitement never ends.</p>
+        </div>
+    </div>
+</body>
+</html>

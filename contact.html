@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe Zone</h1>
+        <div id="main">
+        
+            <span class="navbar-toggle" onclick="openNav()">☰ </span>
+        </div>
+    </header>
+    <input type="checkbox" name="" id="check">
+    <label for="check" class="checkbtn"></label>
+
+    <div class="cont" id="cont">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" id="x">X</label>
+
+        <div id="todoContainer">
+            <div class="todo-app">
+                <h2 class="td"> My Fav Dish <img src="chef.gif" alt="Icon"></h2>
+                <div class="row">
+                    <input type="text" id="task-name-input" placeholder="Add a new task">
+                    <button class="btn" id="add-task-button">Add</button>
+                </div>
+                <ul class="list" id="tasks-list"></ul>
+            </div>
+        </div>
+    </div>
+   
+   
+   
+
+    <div id="myNavbar" class="navbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="recipe.html">Recipes</a>
+      <a href="" ><input type="checkbox" name=""id="check"><label for="check" class="checkbtn">Recipe List</label></a> 
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="head-img">
+     
+            <img src="foods.jpg" alt="foods">
+            
+        
+    </div>
+    <div class="head-img1">
+        <marquee behavior="" direction="" class="mar">
+            <img src="foods.jpg" alt="foods">
+            <img src="" id="image-container-2" alt="">
+            <img src="burger.jpg" alt="foods">
+            <img src="" id="image-container-5" alt="">
+        </marquee>
+        
+    </div>
+   
+    <div class="site">
+        <h1>RECIPE ZONE</h1>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <p>"Recipe Zone is a culinary haven where passion for food meets creativity.
+             We are dedicated to inspiring your culinary journey with delightful 
+             homemade recipes, bringing people together through the joy of shared meals.
+              Explore a world of diverse cuisines, cooking tips, and the pleasure of creating 
+              delicious dishes from scratch. Join us in celebrating the art of cooking and the
+               joy it brings to family and friends."
+        </p>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="tble">
+        <table class="image-table">
+             <tr>
+                <td ><img src="burger.jpg" alt=""></td> 
+                <td id="image-container-2"></td>
+                <td id="image-container-3"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="ist.js"></script>
+    <script src = "blog.js"></script>
+
+    </script>
+</body>
+</html>

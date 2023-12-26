@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe Zone</h1>
+    <div id="main">
+    
+        <span class="navbar-toggle" onclick="openNav()">☰ </span>
+    </div>
+</header>
+ <!-- navigaions -->
+ <input type="checkbox" name="" id="check">
+    <label for="check" class="checkbtn"></label>
+
+    <div class="cont" id="cont">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">X</label>
+
+        <div id="todoContainer">
+            <div class="todo-app">
+                <h2 class="td"> My Fav Dish <img src="chef.gif" alt="Icon"></h2>
+                <div class="row">
+                    <input type="text" id="task-name-input" placeholder="Add a new task">
+                    <button class="btn" id="add-task-button">Add</button>
+                </div>
+                <ul class="list" id="tasks-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div id="myNavbar" class="navbar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="recipe.html">Recipes</a>
+    <a href="" ><input type="checkbox" name=""id="check"><label for="check" class="checkbtn">Recipe List</label></a> 
+      <a href="contact.html">Contact</a>
+  </div>
+    
+  <div>
+    <img src="" id="image-container-7" alt="">
+  </div>
+  <div class = "container">
+    <img src="" id="image-container-7" alt="">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Find Meals For Your Ingredients</h2>
+        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+          <cite>- Jamie Oliver</cite>
+        </blockquote>
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+         
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+          
+        </div>
+      </div>
+      <table class="image-table">
+        <tr>
+            <td id="image-container-1"></td>
+            <td id="image-container-2"></td>
+            <td id="image-container-3"></td>
+        </tr>
+        <tr>
+          <td ><img src="burger.jpg" alt=""></td> 
+           <td ><img src="foods.jpg" alt=""></td>
+           <td ><img src="burger.jpg" alt=""></td>
+          <td ></td>
+      </tr>
+        <tr>
+          <td id="image-container-4"></td>
+          <td id="image-container-5"></td>
+          <td id="image-container-6"></td>
+      </tr>
+    </table>
+    </div>
+  </div>
+
+  <script src = "script.js"></script>
+  <script src = "ist.js"></script>
+</body>
+</html>
