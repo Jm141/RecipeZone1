@@ -105,7 +105,7 @@ h2.td{
     font-weight: bold;
     font-size: 3rem;
 }
-@media screen and (width: 320px) {
+@media screen and (width <= 320px) {
     #x{
         color: white;
         font-weight: bold;
