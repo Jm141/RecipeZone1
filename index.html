@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Zone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="todolist.css">
+    <title>Welcome to Recipe Zone</title>
     <style>
-    
+            body {
+            font-family: 'Arial', sans-serif;
+            background: url('RecipeZone LOGO.png') center/cover no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        img.logo {
+            width: 200px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        section {
+            text-align: center;
+            margin: 20px;
+            transition: opacity 0.5s ease;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ee927b;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        footer {
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .marquee img {
+            width: 100px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .logo-welcome {
+            position: absolute;
+            background: #fff;
+            width: 180px;
+            height: auto;
+            left: 24%;
+            right: 92%;
+            top: -2%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+        }
+
+        #welcomeSection{
+            position: absolute;
+            top: 25%;
+            border: 1px solid #333;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+
     </style>
 </head>
-
 <body>
     <header>
-        <h1>Recipe Zone</h1>
-        <div id="main">
-        
-            <span class="navbar-toggle" onclick="openNav()">☰ </span>
-        </div>
-    </header>
-   
        
+    </header>
+    <div class="logo-welcome">
+        <img src="RecipeZone LOGO.png" class="logo" alt="Recipe Zone Logo">
     </div>
-   
-    <input type="checkbox" name="" id="check">
-    <label for="check" class="checkbtn"></label>
 
-    <div class="cont" id="cont">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn" id="x">X</label>
+    <section id="welcomeSection">
+        <p>Welcome to Recipe Zone, your culinary journey starts here! Explore a world of delightful recipes meticulously curated just for you. Whether you're a seasoned cooking enthusiast or a kitchen beginner, Recipe Zone has something to tantalize every palate and skill level.</p>
+        <p>Indulge in the art of cooking, discover new flavors, and make your kitchen the heart of delicious creations. Let's turn every meal into a memorable experience!</p>
+        <a href="home.html" class="btn" onclick="fadeOut()">Recipe Zone</a>
+    </section>
+    
 
-        <div id="todoContainer">
-            <div class="todo-app">
-                <h2 class="td"> My Fav Dish <img src="chef.gif" alt="Icon"></h2>
-                <div class="row">
-                    <input type="text" id="task-name-input" placeholder="Add a new task">
-                    <button class="btn" id="add-task-button">Add</button>
-                </div>
-                <ul class="list" id="tasks-list"></ul>
-            </div>
+    <footer>
+        <div class="marquee">
+            <marquee behavior="" direction="">
+                <img src="burger.jpg" alt="Burger">
+                <img src="foods.jpg" alt="Food">
+                <img src="burger.jpg" alt="Burger">
+                <img src="pas.jfif" alt="Food">
+                <img src="" id="image-container-2" alt="foods">
+                <img src="" id="image-container-3" alt="foods">
+                <img src="" id="image-container-4" alt="foods">
+            </marquee>
+            <script src="script.js"></script>
         </div>
-    </div>
-    
+    </footer>
    
-
-    <div id="myNavbar" class="navbar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="index.html">Home</a>
-        <a href="recipe.html">Recipes</a>
-      <a href="" ><input type="checkbox" name=""id="check"><label for="check" class="checkbtn">Recipe List</label></a> 
-        <a href="contact.html">Contact</a>
-    </div>
-    
-    <div id="main1">
-        <h1>Welcome to Recipe Zone</h1>
-        <img src="chef.gif" alt="chef.gif" class="gif">
-        <p>Discover a world of delightful homemade recipes that will satisfy your taste buds and inspire your culinary journey.</p>
-        <p>Why Cook?</p>
-        <ul>
-            <li>Enjoy the pleasure of creating delicious meals from scratch.</li>
-           
-            <li>Bring family and friends together through shared meals.</li>
-            <li>Explore diverse cuisines and expand your cooking skills.</li>
-        </ul>
-        <a href="recipe.html"><button type="button">Explore Recipes</button></a>
-    </div>
-    
-    <table class="image-table">
-        <tr>
-            <td id="image-container-1"></td>
-            <td id="image-container-2"></td>
-            <td id="image-container-3"></td>
-        </tr> 
-        <br>
-         <tr>
-            <td ><img src="burger.jpg" alt=""></td> 
-             <td ><img src="foods.jpg" alt=""></td>
-             <td ><img src="burger.jpg" alt=""></td>
-            <td ></td>
-        </tr>
-    </table>
-    <div id="main1">
-        <ul>
-            <li>the pleasure of creating delicious meals from scratch.</li>
-        </ul>
-    </div>
-        <table class="image-table">
-          <tr>
-            <td id="image-container-4"></td>
-            <td id="image-container-6"></td>
-            <td id="image-container-5"></td>
-        </tr>
-    </table>
-    
-   
-    <!-- <script src="script.js"></script> -->
-    <script src="ist.js"></script>  
-    <script src="blog.js"></script>
-   
+    <script>
+        function fadeOut() {
+            var section = document.getElementById('welcomeSection');
+            section.style.opacity = 0;
+            setTimeout(function () {
+                window.location.href = "home.html";
+            }, 500); 
+        }
+    </script>
 </body>
-
 </html>
