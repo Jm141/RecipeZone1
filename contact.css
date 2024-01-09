@@ -394,6 +394,7 @@ height: auto;
         height: 250px;
     }
     .tble {
+        display:none;
         height: auto;
         top: 206%;
         right: 40px;
