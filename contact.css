@@ -203,6 +203,7 @@ height: auto;
         text-align: center;
     }
     .tble {
+        display:none;
         position: absolute;
         width: 500px;
         height: auto;
